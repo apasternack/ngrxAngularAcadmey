@@ -9,7 +9,7 @@ export class ThreadsService {
   constructor(private http: HttpClient) { }
 
   loadUserThreads(): Observable<AllUserData> {
-    return this.http.get<AllUserData('/api/threads');
+    return this.http.get<AllUserData>('/api/threads');
   }
 
 }
